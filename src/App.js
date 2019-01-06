@@ -2,26 +2,33 @@ import React, { Component } from 'react'
 
 import './styles/App.css'
 
-import logo from './assets/logo.png'
-
 class App extends Component {
+
+  state = {}
+  
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        <header>
+          <div>Mom</div>
         </header>
+
+        <div><span className="me">Hi mom</span></div>
+        <div><span className="mom">What's up</span></div>
+        <div><span className="me">I'm making a messenger app prototype and I'm testing out Facebook's</span></div>
+        <div><span className="mom">Where is Bryce?</span></div>
+        <div><span className="me">What do you mean?</span></div>
+        <div><span className="me">Which Bryce are you talking about?</span></div>
+        <div><span className="mom">Your old coworker</span></div>
+        <div><span className="me">Ahh!</span></div>
+        <div><span className="me">Yes.</span></div>
+        <div><span className="me">I know the exact one you're talking about</span></div>
+
+        <footer>
+          <input type="text" />
+
+          <button>✈️</button>
+        </footer>
       </div>
     )
   }

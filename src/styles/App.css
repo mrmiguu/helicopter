@@ -1,32 +1,75 @@
 .App {
+  position: fixed;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  background: white;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App header {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  width: 100%;
+  padding: 1vmax 0;
+  background: rgb(243, 255, 243);
+  box-shadow: 0 2px 2px lightgray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App header > * {
+  font-size: 3vmax;
 }
 
-.App-link {
-  color: #61dafb;
+.App > div {
+  display: inline-block;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App div span {
+  text-align: left;
+  border-radius: 3vmax;
+  font-size: 2.5vmax;
+  max-width: 60%;
+  margin: 1vmax 4vmax;
+  padding: 1vmax 2vmax;
+}
+
+.App span.me {
+  float: right;
+  color: darkslategray;
+  background: rgba(144, 238, 144, 1);
+}
+
+.App span:not(me) {
+  float: left;
+  color: darkslategray;
+  background: lightgray;
+}
+
+.App footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1vmax 0;
+  background: white;
+}
+
+.App footer input {
+  display: inline-block;
+  border-radius: 3vmax;
+  font-size: 3vmax;
+  padding: 1vmax 2vmax;
+  width: 70%;
+  border: 1px solid lightgray;
+}
+
+.App footer button {
+  display: inline-block;
+  font-size: 3vmax;
+  padding: 0;
+  margin-left: 1vmax;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* border: 1px solid lightgray; */
 }
